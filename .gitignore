@@ -1,0 +1,29 @@
+# --- Security: never commit secrets or private keys ---
+
+# Private SSH keys
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+*_key
+*.pem
+*.key
+*.ppk
+
+# Public keys are safe, but keep them out too (they are machine-specific)
+# Remove the next two lines if you want to track your public keys.
+id_*.pub
+
+# Cloud / provider secrets
+.env
+.env.*
+*.pem.key
+credentials
+secrets.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
